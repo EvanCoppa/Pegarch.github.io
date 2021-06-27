@@ -1,0 +1,58 @@
+body{
+     margin: 0;
+    padding: 0;
+    height: 5000px;
+}
+
+.landingPhoto,.pageBody{
+    background-repeat: no-repeat;
+
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li{
+    float: left;
+}
+
+a{
+    display: block;
+    padding: 8px;
+ text-decoration: none;
+ color: white;
+}
+
+.landingPhoto{
+    height: 95vh;
+      top: 0;
+    background-image: url("/images/background.png");
+    width: 100vw;
+}
+
+.header{
+    margin-top: 20px;
+    position:fixed;
+    z-index: 2;
+}
+
+.pageBody{
+    background-image: url("/images/Rectangle\ 3.png");
+    z-index: 10;
+     height: 3000px;
+    width: 100vw;
+ top: 70%;
+ position: absolute;
+}
+
+
+.logo{
+    position: absolute;
+    left: 200px;
+ top: 200px;
+ }
