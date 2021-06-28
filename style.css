@@ -39,6 +39,13 @@ a {
   float: right;
 }
 
+a,
+.subtitle,
+.infoBox h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 .homeLogo {
   float: left;
 }
@@ -58,20 +65,13 @@ a {
   padding: 30px 20px 0 0px;
   margin-right: 5vw;
   margin-left: 0.5vw;
- }
+}
 
- #about{
-     background-color: red;
-     
-
- }
-
-.logo {
+#about {
+  /* background-color: red; */
 }
 
 .subtitle {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   text-align: center;
   font-size: 40px;
@@ -85,13 +85,12 @@ a {
   justify-content: center;
 }
 
-section{
-    height: 100vh;
-     height: 100vw;
-     margin: auto;
-     display : block;
-
- }
+section {
+  height: 100vh;
+  height: 100vw;
+  margin: auto;
+  display: block;
+}
 
 /* Page Body */
 
@@ -117,44 +116,40 @@ section{
 }
 
 .infoBox {
-    margin-top: 500px;
-    width: 600px;
-    height: 600px;
-     background-color: rgb(255, 255, 255);
-     box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.219);
+  margin-top: 500px;
+  width: 600px;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.219);
+}
 
-  }
-  
-  .infoBox img{
-     margin: 100px 100px 20px 100px;
-    }
+.infoBox img {
+  margin: 100px 100px 20px 100px;
+}
 
-  .infoBox h1
-  {
-      text-align: center;
-      width: 600px;
-      height: 600px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      font-size: 50px;
-      margin: 0;
-  }
+.infoBox h1 {
+  text-align: center;
+  width: 600px;
+  height: 600px;
 
-  .marker{
-    transition: all 0.5s;
+  font-size: 50px;
+  margin: 0;
+}
 
-    background-color: #FFF7AF;
-    width: 475px;
-    height: 400px;
-    position: absolute;
-    top: 450px;
-     z-index: -1;
-     margin-left: 50px;
-  }
+.marker {
+  transition: all 0.5s;
 
-  .infoBox:hover .marker{
- top: 400px;
- /* margin-left: 75px;
+  background-color: #fff7af;
+  width: 475px;
+  height: 400px;
+  position: absolute;
+  top: 450px;
+  z-index: -1;
+  margin-left: 50px;
+}
+
+.infoBox:hover .marker {
+  top: 400px;
+  /* margin-left: 75px;
  top: 400px; */
-
 }
