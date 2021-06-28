@@ -1,58 +1,112 @@
-body{
-     margin: 0;
-    padding: 0;
-    height: 5000px;
+html {
+  scroll-behavior: smooth;
 }
 
-.landingPhoto,.pageBody{
-    background-repeat: no-repeat;
-
+body {
+  margin: 0;
+  padding: 0;
+  height: 5000px;
+  width: 100vw;
+  /* overflow: hidden; */
+}
+html::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
+.landingPhoto,
+.pageBody {
+  background-repeat: no-repeat;
+  width: 100vw;
 }
 
-li{
-    float: left;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-a{
-    display: block;
-    padding: 8px;
- text-decoration: none;
- color: white;
+li {
+  float: right;
+  padding-right: 20px;
 }
 
-.landingPhoto{
-    height: 95vh;
-      top: 0;
-    background-image: url("/images/background.png");
-    width: 100vw;
+a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: white;
+  float: right;
 }
 
-.header{
-    margin-top: 20px;
-    position:fixed;
-    z-index: 2;
+.homeLogo {
+  float: left;
 }
 
-.pageBody{
-    background-image: url("/images/Rectangle\ 3.png");
-    z-index: 10;
-     height: 3000px;
-    width: 100vw;
- top: 70%;
- position: absolute;
+.landingPhoto {
+  height: 95vh;
+  top: 0;
+  background-image: url("images/background.png");
+  padding: 0%;
+  background-size: cover;
 }
 
-
-.logo{
-    position: absolute;
-    left: 200px;
- top: 200px;
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 94.5vw;
+  padding: 30px 20px 0 0px;
+  margin-right: 5vw;
+  margin-left: 0.5vw;
  }
+
+
+.logo {
+}
+
+.subtitle {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5px;
+}
+
+.title {
+  padding-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Page Body */
+
+.pageBody {
+  background-image: url("images/Rectangle\ 3.png");
+  z-index: 10;
+  height: 3000px;
+  width: 100%;
+  top: 70%;
+  position: absolute;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoBox {
+    margin-top: 500px;
+    width: 600px;
+    height: 600px;
+     background-color: rgb(224, 224, 224);
+  }
+  
